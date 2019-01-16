@@ -1,0 +1,56 @@
+<!-- CSS CODE BELOW -->
+
+<style>
+  .box-shadow img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .box-shadow img:hover {
+    max-width: 97% !important;
+  }
+  .box-shadow img:active {
+    max-width: 95% !important;
+  }
+  .box-shadow {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);
+    width: 32.3%;
+    margin-left: 1%;
+    margin-left: 0.8%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .box-shadow:first-child {
+    margin-left: 1%;
+  }
+  .box-shadow:last-child {
+    margin-right: 0;
+  }
+</style>
+
+<!-- JAVASCRIPT CODE BELOW -->
+<script> 
+function shadows() {
+  var row = document.querySelectorAll('.white');
+
+  row[4].setAttribute('id', 'target-row');
+
+  var x = document
+    .querySelector('#target-row')
+    .querySelector('.new-row')
+    .querySelectorAll('.acs-commons-resp-colctrl-col');
+
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.add('box-shadow');
+  }
+}
+
+
+window.onload = function() {
+    this.shadows();
+  };
+
+</script>

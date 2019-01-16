@@ -1,0 +1,12 @@
+<!-- JAVASCRIPT CODE BELOW -->
+<script>
+  document.onreadystatechange = function(e) {
+    if (document.readyState === 'complete') {
+      var actionbanner = document.querySelectorAll('.actionbanner');
+      var banner = actionbanner[0];
+
+      banner.innerHTML =
+        '<video autoplay muted loop id=""><source src="<VIDEO URL HERE>" type="video/mp4">Your browser does not support HTML5 video.</video>';
+    }
+  };
+</script>

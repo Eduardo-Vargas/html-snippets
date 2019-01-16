@@ -1,0 +1,38 @@
+<!-- CSS CODE BELOW -->
+<style> 
+        @keyframes animatedBackground {
+          from {
+            background-position: 100% 0;
+          }
+          25% {
+            background-position: 0 100%;
+          }
+          50% {
+            background-position: 100% 100%;
+          }
+          to {
+            background-position: 0 0;
+          }
+        }
+        #animate-area {
+          width: 100%;
+          background-image: url(<INSERT-URL-HERE>);
+          background-position: 0px 0px;
+          background-repeat: repeat-x;
+          animation: animatedBackground 300s linear infinite;
+        }
+</style>
+
+
+<!-- JAVASCRIPT CODE BELOW -->
+
+<script>
+    window.onload = function() {
+      var bgColorSection = document.querySelectorAll('.<CLASS TO REPLACE BG OF>');
+  
+      // Select which bgColor section you want to replace, starting at 0 (the first one is 0)
+      var section = bgColorSection[0];
+      section.id = "animate-area"
+    };
+
+</script>
