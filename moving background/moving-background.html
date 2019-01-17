@@ -14,21 +14,39 @@
             background-position: 0 0;
           }
         }
+        .bg-color .yellow {
+          width: 100%;
+          background-image: url(INSERT-URL-HERE);
+          background-position: 0px 0px;
+          background-repeat: repeat-x;
+          animation: animatedBackground 300s linear infinite;
+        }
+
+</style>
+
+
+<!-- IMPORTANT -->
+
+<!-- use the code below to add  a moving background to a specific class
+otherwise, the css above will add the moving background to the yellow containers-->
+
+
+<style>
         #animate-area {
           width: 100%;
-          background-image: url(<INSERT-URL-HERE>);
+          background-image: url(INSERT-URL-HERE);
           background-position: 0px 0px;
           background-repeat: repeat-x;
           animation: animatedBackground 300s linear infinite;
         }
 </style>
 
-
+</style>
 <!-- JAVASCRIPT CODE BELOW -->
 
 <script>
     window.onload = function() {
-      var bgColorSection = document.querySelectorAll('.<CLASS TO REPLACE BG OF>');
+      var bgColorSection = document.querySelectorAll('.CLASS-TO-REPLACE-BG-OF');
   
       // Select which bgColor section you want to replace, starting at 0 (the first one is 0)
       var section = bgColorSection[0];
