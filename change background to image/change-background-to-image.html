@@ -1,13 +1,13 @@
 <!-- JAVASCRIPT CODE BELOW -->
 <script>
-function bgColorOverride() {
+  function bgColorOverride() {
     var bgColorSections = document.querySelectorAll('.light-grey');
     var section = bgColorSections[0]; // Select which bgColor section you want to replace, starting at 0 (the first one is 0)
     section.style.backgroundImage = "url('<INSERT URL HERE>')";
     section.style.backgroundRepeat = 'no-repeat';
     section.style.backgroundSize = 'cover';
   }
-  
+
   window.onload = function() {
     this.bgColorOverride();
   };
