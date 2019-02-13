@@ -1,0 +1,1 @@
+Assumes jQuery is installed, will make the div with class 'bg-color' point to the same link as whatever <a href=''>is inside it

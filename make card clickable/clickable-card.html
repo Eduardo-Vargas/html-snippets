@@ -1,0 +1,10 @@
+<script>
+  $(document).ready(function() {
+    $('.bg-color').click(function() {
+      window.location = $(this)
+        .find('a')
+        .attr('href');
+      return false;
+    });
+  });
+</script>
