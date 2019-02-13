@@ -1,0 +1,1 @@
+Must add an ID tag 'animateImg' to the img component
